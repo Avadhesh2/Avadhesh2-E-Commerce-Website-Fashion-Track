@@ -128,8 +128,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # sending emails
 
 EMAIL_HOST = 'smtpout.secureserver.net'
-EMAIL_HOST_USER = 'avadhesh.2125csai@kiet.edu'
-EMAIL_HOST_PASSWORD = '#Avadhesh22'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
