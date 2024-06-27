@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}payment status{% endblock title %}
+{% block body %}
+<h1 class="text-center">Payment Status</h1>
+
+<div class="container mt-2">
+    {% for message in messages %}
+
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+      <strong>{{message}}</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+<div class="row">
+
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+
+         
+<div class="alert alert-success" role="alert">
+    PAYMENT STATUS
+    </div>
+    <div class="container mt-3">
+    
+        
+        <div class="col my-4">
+    
+            <h1>Payment Status</h1>
+            <p>Payment status regarding your order ID {{ order_id }}</p>
+            <p>{{ status }}</p>
+            <p>Order Details:</p>
+            <ul>
+                <li>Order ID: {{ response.razorpay_order_id }}</li>
+                <li>Payment ID: {{ response.razorpay_payment_id }}</li>
+                <!--<li>Signature: {{ response.razorpay_signature }}</li> --> 
+            </ul>
+        </div>
+    
+    </div>
+    </div>
+   
+</div>
+
+
+
+
+</div>
+{% endblock body %}

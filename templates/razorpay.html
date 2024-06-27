@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorpay Payment</title>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+    <h1>Redirecting you to the payment gateway...</h1>
+    <h1>Please do not refresh your page...</h1>
+    <h1>Please do not refresh your page...</h1>
+    <h1>Please do not refresh your page...</h1>
+
+    <script>
+        // Function to open Razorpay checkout
+        function openRazorpayCheckout() {
+            var options = {
+                "key": "rzp_test_7xU3UbNrd1gV2i", // Enter the Key ID generated from the Dashboard
+                "amount": "{{ payment.amount }}", // Amount is in paise
+                "currency": "INR",
+                "name": "ShopyCart",
+                "description": "Test transaction",
+                "image": "{% static 'images/logo.png' %}",
+                "order_id": "{{ payment.id }}", // This is a sample Order ID. Pass the `id` obtained in the previous step
+                "handler": function (response){
+                    // This function handles the payment success callback
+                    var form = document.createElement('form');
+                    form.setAttribute('method', 'POST');
+                    form.setAttribute('action', '/handlerequest/');
+
+                    var razorpayOrderIdInput = document.createElement('input');
+                    razorpayOrderIdInput.setAttribute('type', 'hidden');
+                    razorpayOrderIdInput.setAttribute('name', 'razorpay_order_id');
+                    razorpayOrderIdInput.setAttribute('value', response.razorpay_order_id);
+                    form.appendChild(razorpayOrderIdInput);
+
+                    var razorpayPaymentIdInput = document.createElement('input');
+                    razorpayPaymentIdInput.setAttribute('type', 'hidden');
+                    razorpayPaymentIdInput.setAttribute('name', 'razorpay_payment_id');
+                    razorpayPaymentIdInput.setAttribute('value', response.razorpay_payment_id);
+                    form.appendChild(razorpayPaymentIdInput);
+
+                    var razorpaySignatureInput = document.createElement('input');
+                    razorpaySignatureInput.setAttribute('type', 'hidden');
+                    razorpaySignatureInput.setAttribute('name', 'razorpay_signature');
+                    razorpaySignatureInput.setAttribute('value', response.razorpay_signature);
+                    form.appendChild(razorpaySignatureInput);
+
+                    document.body.appendChild(form);
+                    form.submit();
+                },
+                "prefill": {
+                    "name": "{{ order.name }}",
+                    "email": "{{ order.email }}",
+                    "contact": "{{ order.phone }}"
+                },
+                "theme": {
+                    "color": "#F37254"
+                }
+            };
+            var rzp1 = new Razorpay(options);
+            rzp1.open();
+        }
+
+        // Open the Razorpay checkout automatically when the page loads
+        window.onload = openRazorpayCheckout;
+    </script>
+</body>
+</html>
