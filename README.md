@@ -110,29 +110,44 @@ Thank you for using Fashion Track! Happy shopping!
 ## Screenshots
 
 ### Landing Page
-![Landing Page](path/to/landing-page-image.png)
+![Screenshot 2024-07-01 001747](https://github.com/Avadhesh2/Avadhesh2-E-Commerce-Website-Fashion-Track/assets/113242112/cce2522e-56ab-4011-b735-5fcf740ee8c0)
+
 
 ### Login Page
-![Login Page](path/to/login-page-image.png)
+![Screenshot 2024-06-30 194200](https://github.com/Avadhesh2/Avadhesh2-E-Commerce-Website-Fashion-Track/assets/113242112/8880ad8b-c5ef-4f34-ba9e-a88e4eb195cb)
 
 ### Signup Page
-![Signup Page](path/to/signup-page-image.png)
+![Screenshot 2024-06-30 194236](https://github.com/Avadhesh2/Avadhesh2-E-Commerce-Website-Fashion-Track/assets/113242112/017f7394-b630-4140-a095-60a9d36757e0)
+
 
 ### Reset Password
-![Reset Password](path/to/reset-password-image.png)
+![Screenshot 2024-07-01 004807](https://github.com/Avadhesh2/Avadhesh2-E-Commerce-Website-Fashion-Track/assets/113242112/fa0d8ef9-1cad-4a5d-ae43-8f4707c06eb7)
+![Screenshot 2024-07-01 003104](https://github.com/Avadhesh2/Avadhesh2-E-Commerce-Website-Fashion-Track/assets/113242112/894c15f7-9d20-472e-bbf1-fe46b882343e)
+
+
+
 
 ### Password Reset Successful
 ![Password Reset Successful](path/to/password-reset-successful-image.png)
 
 ### Contact Page
-![Contact Page](path/to/contact-page-image.png)
+![Screenshot 2024-07-01 000334](https://github.com/Avadhesh2/Avadhesh2-E-Commerce-Website-Fashion-Track/assets/113242112/c689a563-d39d-440c-a9d0-050b2eed4846)
+
 
 ### Check Our Products
-![Check Our Products](path/to/check-our-products-image.png)
+![Screenshot 2024-07-01 001904](https://github.com/Avadhesh2/Avadhesh2-E-Commerce-Website-Fashion-Track/assets/113242112/32309e18-b2e9-42ff-a26c-1cf09093dd15)
+
 
 ### Checkout Page
-![Checkout Page](path/to/checkout-page-image.png)
+![Screenshot 2024-07-01 002255](https://github.com/Avadhesh2/Avadhesh2-E-Commerce-Website-Fashion-Track/assets/113242112/ccc2a0ea-1738-4828-9fa3-b049e8621dac)
+###Razorpay Payment Integration
+![Screenshot 2024-07-01 002506](https://github.com/Avadhesh2/Avadhesh2-E-Commerce-Website-Fashion-Track/assets/113242112/322c32de-4275-4747-b4b3-0101fd02cd40)
 
+![Screenshot 2024-07-01 002955](https://github.com/Avadhesh2/Avadhesh2-E-Commerce-Website-Fashion-Track/assets/113242112/79b9c70b-0b43-4e60-9afc-33e7c47b7369)
+
+### Profile Page
+
+![Screenshot 2024-07-01 002807](https://github.com/Avadhesh2/Avadhesh2-E-Commerce-Website-Fashion-Track/assets/113242112/c56b30d4-7fd7-4d84-8e3b-9dab40cf4bc0)
 
 
 To add this README file to your GitHub repository:
